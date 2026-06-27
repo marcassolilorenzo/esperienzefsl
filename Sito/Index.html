@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio PCTO | Il Mio Percorso</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'bravox-bg': '#EFEFEF', 
+                        'bravox-dark': '#111111',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #EFEFEF;
+            color: #111111;
+        }
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="antialiased font-sans px-6 md:px-12 py-8">
+
+    <nav class="flex justify-between items-start text-xs font-semibold uppercase tracking-wider mb-24">
+    </nav>
+
+    <!-- Header: Titolo perfettamente centrato e 4 foto grandi avvicinate come cornice -->
+    <header class="w-full relative min-h-[95vh] flex items-center justify-center mb-32 overflow-hidden px-4">
+        
+        <!-- CORNICE IMMAGINI AVVICINATE (Solo 4 foto, più grandi, coordinate stringe vicino al titolo) -->
+        <div class="absolute inset-0 pointer-events-none z-0 w-full h-full">
+            
+            <!-- ALTO SINISTRA (Avvicinata al centro) -->
+            <!-- NOTTINGHAM: Foto 5 (.jpg) -->
+            <img src="NOTTINGHAM/5.jpg" alt="" class="absolute top-6 left-6 md:left-16 w-64 h-64 md:w-[22rem] md:h-[22rem] object-cover opacity-40 rounded transform -rotate-6">
+            
+            <!-- ALTO DESTRA (Avvicinata al centro) -->
+            <!-- TRIBUNALE: Foto 4 (.jpg) -->
+            <img src="TRIBUNALE/4.jpg" alt="" class="absolute top-6 right-6 md:right-16 w-64 h-64 md:w-[22rem] md:h-[22rem] object-cover opacity-45 rounded transform rotate-6">
+            
+            <!-- BASSO SINISTRA (Sotto al titolo, avvicinata) -->
+            <!-- TRIBUNALE: Foto 6 (.jpg) -->
+            <img src="TRIBUNALE/6.jpg" alt="" class="absolute bottom-6 left-12 md:left-24 w-64 h-64 md:w-[22rem] md:h-[22rem] object-cover opacity-35 rounded transform rotate-3">
+            
+            <!-- BASSO DESTRA (Sotto al titolo, avvicinata) -->
+            <!-- SCIENZABG: Foto 5 (.jpeg) -->
+            <img src="SCIENZABG/5.jpeg" alt="" class="absolute bottom-6 right-12 md:right-24 w-64 h-64 md:w-[22rem] md:h-[22rem] object-cover opacity-40 rounded transform -rotate-6">
+            
+        </div>
+
+        <!-- Blocco Titolo e Sottotitolo originale, centrato -->
+        <div class="relative z-10 text-center max-w-4xl mx-auto pointer-events-auto py-12 flex flex-col items-center justify-center">
+            <h1 class="text-8xl md:text-[11rem] font-black tracking-tighter uppercase mb-6 leading-none select-none w-full text-center">
+                <br> PERCORSI PCTO
+            </h1>
+            <p class="text-xl md:text-2xl font-bold uppercase tracking-wide max-w-3xl mx-auto text-center">
+                Quattro esperienze fondamentali per plasmare il mio futuro. Competenze, pratica e tecnologia — tutto in un unico percorso.
+            </p>
+        </div>
+
+    </header>
+
+    <hr class="border-t border-bravox-dark opacity-20 mb-16">
+
+    <!-- Sezione Introduzione a TUTTA LARGHEZZA e CENTRATA -->
+    <section id="intro" class="text-center w-full mb-32 px-4">
+        <h2 class="text-3xl md:text-5xl font-black uppercase tracking-tight leading-none mb-8 w-full">
+            UN PERCORSO MULTIDISCIPLINARE TRA DIRITTO, SCIENZA E TECNOLOGIA, PENSATO PER SVILUPPARE COMPETENZE TRASVERSALI REALI.
+        </h2>
+        <p class="text-lg font-medium w-full max-w-none">
+            [Qui inseriremo il tuo testo di presentazione stringato. Sostituirai questo blocco con la tua sintesi del percorso prima di scendere nel dettaglio delle singole esperienze.]
+        </p>
+    </section>
+
+    <!-- Griglia delle 4 esperienze -->
+    <section id="percorsi" class="mb-32">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-24">
+            
+            <!-- Tribunale di Bergamo -->
+            <article>
+                <a href="Tribunale.html" class="block group">
+                    <div class="aspect-[4/3] bg-gray-300 w-full mb-6 overflow-hidden">
+                        <!-- Modificata solo questa sotto -->
+                        <img src="TRIBUNALE/SFONDO.jpg" alt="Tribunale di Bergamo" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-500">
+                    </div>
+                    <h3 class="text-4xl md:text-5xl font-black uppercase tracking-tight mb-4 text-center group-hover:opacity-80 transition duration-300">Tribunale di Bergamo</h3>
+                </a>
+            </article>
+
+            <!-- Internship a Nottingham -->
+            <article>
+                <a href="Nottingham.html" class="block group">
+                    <div class="aspect-[4/3] bg-gray-300 w-full mb-6 overflow-hidden">
+                        <img src="NOTTINGHAM/SFONDO.jpeg" alt="Internship Nottingham" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-500">
+                    </div>
+                    <h3 class="text-4xl md:text-5xl font-black uppercase tracking-tight mb-4 text-center group-hover:opacity-80 transition duration-300">Internship a Nottingham</h3>
+                </a>
+            </article>
+
+            <!-- Bergamoscienza -->
+            <article>
+                <a href="Bergamoscienza.html" class="block group">
+                    <div class="aspect-[4/3] bg-gray-300 w-full mb-6 overflow-hidden">
+                        <!-- Modificata solo questa sotto -->
+                        <img src="SCIENZABG/SFONDO.jpg" alt="Bergamoscienza" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-500">
+                    </div>
+                    <h3 class="text-4xl md:text-5xl font-black uppercase tracking-tight mb-4 text-center group-hover:opacity-80 transition duration-300">Bergamoscienza</h3>
+                </a>
+            </article>
+
+            <!-- Progetto Jump -->
+            <article>
+                <a href="Jump.html" class="block group">
+                    <div class="aspect-[4/3] bg-gray-300 w-full mb-6 overflow-hidden">
+                        <img src="JUMP/SFONDO.jpg" alt="Progetto Jump" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-500">
+                    </div>
+                    <h3 class="text-4xl md:text-5xl font-black uppercase tracking-tight mb-4 text-center group-hover:opacity-80 transition duration-300">Progetto Jump</h3>
+                </a>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="text-center py-16 border-t border-bravox-dark">
+        <h2 class="text-xl md:text-3xl font-black uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-bravox-dark to-gray-400 opacity-60">
+            ESPERIENZE FSL DI LORENZO MARCASSOLI
+        </h2>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report PCTO | Benessere Emotivo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'bravox-bg': '#EFEFEF',
+                        'bravox-dark': '#130B09',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #EFEFEF;
+            color: #130B09;
+        }
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="antialiased font-sans px-6 md:px-16 py-8">
+
+    <nav class="flex justify-between items-start text-xs font-semibold uppercase tracking-wider mb-20 border-b border-gray-300 pb-6">
+        <div class="text-xl font-black tracking-tighter">LORENZO MARCASSOLI</div>
+        <div class="hidden md:flex gap-16">
+            <ul class="space-y-1">
+                <li><a href="#" class="hover:underline">Portfolio</a></li>
+                <li><a href="#attivita" class="hover:underline">Focus</a></li>
+                <li><a href="#climax" class="hover:underline">La Cura</a></li>
+            </ul>
+            <ul class="space-y-1">
+                <li><a href="#competenze" class="hover:underline">Skills</a></li>
+                <li><a href="#visione" class="hover:underline">Visione</a></li>
+            </ul>
+        </div>
+        <div>
+            <span class="text-gray-500">[ CLASSE 3A ]</span>
+        </div>
+    </nav>
+
+    <!-- Header con foto SFONDO in secondo piano -->
+    <header class="mb-24 relative min-h-[60vh] flex flex-col justify-end pb-8 rounded-sm overflow-hidden">
+        
+        <!-- FOTO SFONDO JUMP -->
+        <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden opacity-75">
+            <img src="JUMP/SFONDO.jpg" alt="" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#EFEFEF] via-transparent to-transparent opacity-40"></div>
+        </div>
+
+        <div class="relative z-10 p-4 md:p-0">
+            <div class="text-xs font-bold tracking-widest uppercase text-gray-500 mb-4 bg-[#EFEFEF]/80 inline-block px-2 rounded-sm md:bg-transparent md:p-0">[ REPORT PCTO ]</div>
+            <h1 class="text-5xl md:text-8xl font-black tracking-tighter uppercase leading-none mb-12 select-none text-white drop-shadow-[0_4px_12px_rgba(19,11,9,0.7)]">
+                BENESSERE EMOTIVO<br>& COMUNITÀ
+            </h1>
+        </div>
+        
+        <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-6 border-t border-b border-bravox-dark py-6 mt-8 bg-[#EFEFEF]/90 backdrop-blur-md md:px-4 rounded-sm">
+            <div>
+                <p class="text-xs uppercase text-gray-500 font-bold mb-1">Studente</p>
+                <p class="text-lg font-bold uppercase">Lorenzo Marcassoli</p>
+            </div>
+            <div>
+                <p class="text-xs uppercase text-gray-500 font-bold mb-1">Associazione & Rete</p>
+                <p class="text-lg font-bold uppercase">La Pentola d'Oro A.P.S. (Alzano L.)</p>
+            </div>
+            <div>
+                <p class="text-xs uppercase text-gray-500 font-bold mb-1">Periodo</p>
+                <p class="text-lg font-bold uppercase">Novembre — Aprile (A.S. 23/24)</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- COPPIA DI IMMAGINI (Foto 1, 2 .jpeg) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-20">
+        <div class="w-full h-80 overflow-hidden rounded-sm">
+            <img src="JUMP/1.jpeg" alt="" class="w-full h-full object-cover">
+        </div>
+        <div class="w-full h-80 overflow-hidden rounded-sm">
+            <img src="JUMP/2.jpeg" alt="" class="w-full h-full object-cover">
+        </div>
+    </div>
+
+    <section class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-32 items-center">
+        <div class="md:col-span-4 text-xs font-bold tracking-widest uppercase pt-2 text-gray-500">
+            [ INTELLIGENZA EMOTIVA ]
+            <div class="mt-4 w-full h-56 overflow-hidden rounded-sm">
+                <img src="JUMP/3.jpeg" alt="" class="w-full h-full object-cover">
+            </div>
+        </div>
+        <div class="md:col-span-8">
+            <p class="text-2xl md:text-4xl font-bold uppercase tracking-tight leading-tight">
+                Un percorso itinerante per analizzare la sfera relazionale, abbattere i confini della classe e attivare dinamiche sociali sane nel tessuto cittadino.
+            </p>
+        </div>
+    </section>
+
+    <!-- TRITTICO ORIZZONTALE (Inserita Foto 9 .jpg al posto della 4 con taglio intermedio) -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-32">
+        <div class="h-48 overflow-hidden rounded-sm">
+            <!-- Sostituita la 4 con la 9.jpg e mantenuto il taglio bilanciato via di mezzo -->
+            <img src="JUMP/9.jpg" alt="" class="w-full h-full object-cover object-center">
+        </div>
+        <div class="h-48 overflow-hidden rounded-sm">
+            <img src="JUMP/5.jpeg" alt="" class="w-full h-full object-cover">
+        </div>
+        <div class="h-48 overflow-hidden rounded-sm">
+            <img src="JUMP/6.jpeg" alt="" class="w-full h-full object-cover">
+        </div>
+    </div>
+
+    <section id="attivita" class="border-t border-gray-300 pt-16 mb-32">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+            <div class="md:col-span-4">
+                <span class="text-xs font-bold tracking-widest uppercase text-gray-500">[ MODULI STRATEGICI ]</span>
+                <h2 class="text-3xl font-black uppercase tracking-tighter mt-4 sticky top-6">
+                    Star Bene<br>in Comunità
+                </h2>
+            </div>
+            
+            <div class="md:col-span-8 space-y-12">
+                <div class="border-b border-gray-300 pb-6">
+                    <h3 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-1">01 / FORMAZIONE ED EDUCAZIONE</h3>
+                    <h4 class="text-xl font-black uppercase mb-2">Analisi delle Relazioni</h4>
+                    <p class="text-gray-700 font-medium">
+                        Studio guidato delle dinamiche interpersonali. Comprensione profonda dei fattori psicologici e sociali che strutturano rapporti umani stabili, sani e collaborativi.
+                    </p>
+                </div>
+                <div class="border-b border-gray-300 pb-6">
+                    <h3 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-1">02 / LABORATORI CREATIVI</h3>
+                    <h4 class="text-xl font-black uppercase mb-2">Azione Pratica Consapevole</h4>
+                    <p class="text-gray-700 font-medium">
+                        Riscoperta e applicazione di abilità concrete attraverso chiavi di lettura trasversali. Campi d'azione diversificati: dalla cucina alla lettura fino all'analisi dei media.
+                    </p>
+                </div>
+                <div class="border-b border-gray-300 pb-6">
+                    <h3 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-1">03 / RETE ITINERANTE</h3>
+                    <h4 class="text-xl font-black uppercase mb-2">Presidio del Territorio</h4>
+                    <p class="text-gray-700 font-medium">
+                        Attività sul campo oltre l'edificio scolastico: sessioni operative sviluppate presso il Consultorio Familiare, la Biblioteca e le sedi istituzionali del Comune.
+                    </p>
+                </div>
+                <div class="bg-white p-8 border border-bravox-dark rounded-sm">
+                    <span class="text-xs font-bold uppercase tracking-wider text-gray-400 block mb-2">[ IMPEGNO ATTIVO ]</span>
+                    <p class="text-xl font-bold tracking-tight uppercase">
+                        "Mettersi in gioco in prima persona. Abbiamo incanalato creatività ed espressività individuale per la sintesi e la stesura dell'elaborato finale."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="climax" class="bg-bravox-dark text-white -mx-6 md:-mx-16 px-6 md:px-16 py-24 mb-32">
+        <div class="max-w-7xl mx-auto">
+            <span class="text-xs font-bold tracking-widest uppercase text-gray-400 block mb-4">[ IMPATTO CIVICO ]</span>
+            <h2 class="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-12 leading-none">
+                IL FOCUS: LA LETTURA<br>COME CURA SOCIALE
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-300 font-medium text-lg mb-12">
+                <div>
+                    <p class="border-l-2 border-white pl-4">
+                        <strong>Mediazione relazionale:</strong> Il laboratorio dedicato all'interazione diretta con l'infanzia ha rappresentato il vero fulcro del valore civile e sociale del progetto.
+                    </p>
+                </div>
+                <div>
+                    <p class="border-l-2 border-white pl-4">
+                        <strong>Decodifica emotiva:</strong> Una sfida comunicativa radicale: trovare la sintassi e i metodi idonei per trasmettere concetti complessi legati alla sfera dei sentimenti.
+                    </p>
+                </div>
+            </div>
+
+            <!-- COPPIA DI FOTO NEL BLOCCO SCURO (Foto 7, 8 .jpg) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="h-72 overflow-hidden rounded-sm">
+                    <img src="JUMP/7.jpg" alt="" class="w-full h-full object-cover">
+                </div>
+                <div class="h-72 overflow-hidden rounded-sm">
+                    <img src="JUMP/8.jpg" alt="" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-32 border-b border-gray-300 pb-16">
+        <div class="md:col-span-4 text-xs font-bold tracking-widest uppercase text-gray-500">
+            [ SUPPORTO E NETWORK ]
+        </div>
+        <div class="md:col-span-8">
+            <h2 class="text-2xl font-black uppercase tracking-tight mb-8">Figure di Riferimento</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="font-black uppercase text-sm mb-1">// COINVOLGIMENTO PROFESSIONALE</h4>
+                    <p class="text-gray-700 font-medium">Istruttivi i confronti con il personale esterno dei presidi visitati. Gli esperti Nicola e Valeria ci hanno guidato nella formazione collettiva.</p>
+                </div>
+                <div>
+                    <h4 class="font-black uppercase text-sm mb-1">// GUIDA AZIENDALE</h4>
+                    <p class="text-gray-700 font-medium">Monica Altobelli (Tutor). Presenza costante, attenta all'ascolto e al dibattito critico sulle tematiche relazionali trattate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="competenze" class="mb-32">
+        <span class="text-xs font-bold tracking-widest uppercase text-gray-500 block mb-2">[ ASSET ACQUISITI ]</span>
+        <h2 class="text-4xl font-black uppercase tracking-tighter mb-12">BAGAGLIO DI COMPETENZE</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 border-t border-bravox-dark">
+            <div class="border-b md:border-b-0 md:border-r border-bravox-dark p-6 pl-0">
+                <h3 class="text-xs font-black uppercase mb-6 tracking-widest text-gray-400">// INTELLIGENZA EMOTIVA</h3>
+                <ul class="space-y-2 font-bold uppercase text-sm tracking-tight">
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-bravox-dark rounded-full"></span> Consapevolezza interiore</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-bravox-dark rounded-full"></span> Comunicazione delle emozioni</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-bravox-dark rounded-full"></span> Rispetto del contesto civico</li>
+                </ul>
+            </div>
+            <div class="border-b md:border-b-0 md:border-r border-bravox-dark p-6 md:px-8">
+                <h3 class="text-xs font-black uppercase mb-6 tracking-widest text-gray-400">// ABILITÀ RELAZIONALI</h3>
+                <ul class="space-y-2 font-bold uppercase text-sm tracking-tight">
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-bravox-dark rounded-full"></span> Collaborazione dinamica</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-bravox-dark rounded-full"></span> Confronto intergenerazionale</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-bravox-dark rounded-full"></span> Ascolto attivo ed empatia</li>
+                </ul>
+            </div>
+            <div class="p-6 md:px-8 pr-0">
+                <h3 class="text-xs font-black uppercase mb-6 tracking-widest text-gray-400">// CRESCITA PERSONALE</h3>
+                <ul class="space-y-2 font-bold uppercase text-sm tracking-tight">
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-bravox-dark rounded-full"></span> Creatività ed espressività</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-bravox-dark rounded-full"></span> Appartenenza alla comunità</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-bravox-dark rounded-full"></span> Elaborazione prospettive future</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="visione" class="bg-gray-300/40 p-8 md:p-16 border border-gray-300 text-center mb-24">
+        <blockquote class="text-2xl md:text-4xl font-black tracking-tight uppercase max-w-4xl mx-auto leading-tight mb-6">
+            "Un'esperienza arricchente che mi ha offerto un prezioso insegnamento sociale, insegnandomi a collaborare in modo diverso e profondo."
+        </blockquote>
+        <div class="font-black text-xs uppercase tracking-widest text-gray-500">— VISIONE FINALE</div>
+    </section>
+
+    <footer class="text-center py-12 border-t border-gray-300">
+        <p class="text-xs font-bold tracking-widest uppercase text-gray-400">Esame di Stato 2026 — Lorenzo Marcassoli</p>
+    </footer>
+
+    <!-- PULSANTE CASETTA -->
+    <a href="Index.html#ancora" class="fixed bottom-8 right-8 z-50 p-3 bg-bravox-dark text-white border-2 border-white rounded-sm shadow-xl hover:bg-gray-800 transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-10 h-10">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+        </svg>
+    </a>
+
+</body>
+</html>

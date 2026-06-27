@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report PCTO | Tribunale di Bergamo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'bravox-bg': '#EFEFEF',
+                        'bravox-dark': '#130B09',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #EFEFEF;
+            color: #130B09;
+        }
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="antialiased font-sans px-6 md:px-16 py-8">
+
+    <nav class="flex justify-between items-start text-xs font-semibold uppercase tracking-wider mb-20 border-b border-gray-300 pb-6">
+        <div class="text-xl font-black tracking-tighter">LORENZO MARCASSOLI</div>
+        <div class="hidden md:flex gap-16">
+            <ul class="space-y-1">
+                <li><a href="#" class="hover:underline">Portfolio</a></li>
+                <li><a href="#attivita" class="hover:underline">Focus</a></li>
+                <li><a href="#climax" class="hover:underline">Il Caso</a></li>
+            </ul>
+            <ul class="space-y-1">
+                <li><a href="#competenze" class="hover:underline">Skills</a></li>
+                <li><a href="#valutazione" class="hover:underline">Chiusura</a></li>
+            </ul>
+        </div>
+        <div>
+            <span class="text-gray-500">[ CLASSE 5A ]</span>
+        </div>
+    </nav>
+
+    <!-- Header con foto SFONDO.jpg -->
+    <header class="mb-24 relative min-h-[60vh] flex flex-col justify-end pb-8 rounded-sm overflow-hidden">
+        <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden opacity-75">
+            <img src="TRIBUNALE/SFONDO.jpg" alt="" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#EFEFEF] via-transparent to-transparent opacity-40"></div>
+        </div>
+
+        <div class="relative z-10 p-4 md:p-0">
+            <div class="text-xs font-bold tracking-widest uppercase text-gray-500 mb-4 bg-[#EFEFEF]/80 inline-block px-2 rounded-sm md:bg-transparent md:p-0">[ REPORT PCTO ]</div>
+            <h1 class="text-5xl md:text-8xl font-black tracking-tighter uppercase leading-none mb-12 select-none text-white drop-shadow-[0_4px_12px_rgba(19,11,9,0.7)]">
+                IMMERSIONE NEL<br>SISTEMA GIURIDICO
+            </h1>
+        </div>
+        
+        <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-6 border-t border-b border-bravox-dark py-6 mt-8 bg-[#EFEFEF]/90 backdrop-blur-md md:px-4 rounded-sm">
+            <div>
+                <p class="text-xs uppercase text-gray-500 font-bold mb-1">Studente</p>
+                <p class="text-lg font-bold uppercase">Lorenzo Marcassoli</p>
+            </div>
+            <div>
+                <p class="text-xs uppercase text-gray-500 font-bold mb-1">Ente Ospitante</p>
+                <p class="text-lg font-bold uppercase">Tribunale di Bergamo (Luglio 2025)</p>
+            </div>
+            <div>
+                <p class="text-xs uppercase text-gray-500 font-bold mb-1">Istituto</p>
+                <p class="text-lg font-bold uppercase">Edoardo Amaldi</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. PRIMA RIGA DI IMMAGINI (Foto 7 e accanto la 2) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-20">
+        <div class="w-full h-80 overflow-hidden rounded-sm">
+            <img src="TRIBUNALE/7.jpg" alt="" class="w-full h-full object-cover">
+        </div>
+        <div class="w-full h-80 overflow-hidden rounded-sm">
+            <img src="TRIBUNALE/2.jpg" alt="" class="w-full h-full object-cover">
+        </div>
+    </div>
+
+    <!-- 2. SECONDA RIGA DI IMMAGINI (Scendendo: la 3) -->
+    <section class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-32 items-center">
+        <div class="md:col-span-4 text-xs font-bold tracking-widest uppercase pt-2 text-gray-500">
+            [ SINTESI CIVILE ]
+            <div class="mt-4 w-full h-56 overflow-hidden rounded-sm">
+                <img src="TRIBUNALE/3.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+        </div>
+        <div class="md:col-span-8">
+            <p class="text-2xl md:text-4xl font-bold uppercase tracking-tight leading-tight">
+                Un'esperienza civile sul campo per decodificare i meccanismi della giustizia e la tutela reale dei cittadini fragili.
+            </p>
+        </div>
+    </section>
+
+    <!-- 3. TERZA RIGA DI IMMAGINI (Sotto nella riga: 4, 8 e 10) -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-32">
+        <div class="h-48 overflow-hidden rounded-sm">
+            <img src="TRIBUNALE/4.jpg" alt="" class="w-full h-full object-cover object-center">
+        </div>
+        <div class="h-48 overflow-hidden rounded-sm">
+            <img src="TRIBUNALE/8.jpeg" alt="" class="w-full h-full object-cover">
+        </div>
+        <div class="h-48 overflow-hidden rounded-sm">
+            <img src="TRIBUNALE/10.jpg" alt="" class="w-full h-full object-cover">
+        </div>
+    </div>
+
+    <section id="attivita" class="border-t border-gray-300 pt-16 mb-32">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+            <div class="md:col-span-4">
+                <span class="text-xs font-bold tracking-widest uppercase text-gray-500">[ CORE BUSINESS ]</span>
+                <h2 class="text-3xl font-black uppercase tracking-tighter mt-4 sticky top-6">
+                    Amministrazione<br>di Sostegno
+                </h2>
+            </div>
+            
+            <div class="md:col-span-8 space-y-12">
+                <div class="border-b border-gray-300 pb-6">
+                    <h3 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-1">01 / BACK-OFFICE STRATEGICO</h3>
+                    <h4 class="text-xl font-black uppercase mb-2">Precisione e Archiviazione</h4>
+                    <p class="text-gray-700 font-medium">
+                        Riordino metodico delle pratiche e gestione dei documenti sensibili di cancelleria. Massima accuratezza procedurale.
+                    </p>
+                </div>
+                <div class="border-b border-gray-300 pb-6">
+                    <h3 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-1">02 / FRONTLINE ISTITUZIONALE</h3>
+                    <h4 class="text-xl font-black uppercase mb-2">Contatto con il Cittadino</h4>
+                    <p class="text-gray-700 font-medium">
+                        Accoglienza utenti allo sportello, gestione delle istanze, consegna decreti e pianificazione udienze con il Giudice.
+                    </p>
+                </div>
+                <div class="border-b border-gray-300 pb-6">
+                    <h3 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-1">03 / SINERGIE SUL CAMPO</h3>
+                    <h4 class="text-xl font-black uppercase mb-2">Avvocatura & Magistratura</h4>
+                    <p class="text-gray-700 font-medium">
+                        Studio delle dinamiche di cooperazione tra la difesa del cittadino e la fase di validazione del magistrato.
+                    </p>
+                </div>
+                <div class="bg-white p-8 border border-bravox-dark rounded-sm">
+                    <span class="text-xs font-bold uppercase tracking-wider text-gray-400 block mb-2">[ L'IMPATTO REALISTICO ]</span>
+                    <p class="text-xl font-bold tracking-tight uppercase">
+                        "Dietro ogni faldone c'è una vita. Lo sportello mostra il peso reale delle decisioni giuridiche sul destino delle persone."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. QUARTA RIGA DI IMMAGINI (Nella parte nera: la 5 e la 6) -->
+    <section id="climax" class="bg-bravox-dark text-white -mx-6 md:-mx-16 px-6 md:px-16 py-24 mb-32">
+        <div class="max-w-7xl mx-auto">
+            <span class="text-xs font-bold tracking-widest uppercase text-gray-400 block mb-4">[ FOCUS PENALE ]</span>
+            <h2 class="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-12 leading-none">
+                IL CLIMAX:<br>CORTE D'ASSISE
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-300 font-medium text-lg mb-12">
+                <div>
+                    <p class="border-l-2 border-white pl-4">
+                        <strong>Presenza in aula:</strong> Ho assistito a un processo in Corte d'Assise incentrato su un grave caso di maltrattamenti domestici.
+                    </p>
+                </div>
+                <div>
+                    <p class="border-l-2 border-white pl-4">
+                        <strong>La lezione:</strong> Uno sguardo crudo sulla responsabilità decisionale dei giudici e sul valore assoluto dei diritti umani.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="h-72 overflow-hidden rounded-sm">
+                    <img src="TRIBUNALE/5.jpg" alt="" class="w-full h-full object-cover">
+                </div>
+                <div class="h-72 overflow-hidden rounded-sm">
+                    <img src="TRIBUNALE/6.jpg" alt="" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. QUINTA RIGA DI IMMAGINI (In fondo: metti 1 e 9) -->
+    <section class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-32 border-b border-gray-300 pb-16">
+        <div class="md:col-span-4 text-xs font-bold tracking-widest uppercase text-gray-500">
+            [ CONTESTO UMANO ]
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 pr-4">
+                <div class="h-40 overflow-hidden rounded-sm">
+                    <img src="TRIBUNALE/1.jpg" alt="" class="w-full h-full object-cover">
+                </div>
+                <div class="h-40 overflow-hidden rounded-sm">
+                    <img src="TRIBUNALE/9.jpg" alt="" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+        <div class="md:col-span-8">
+            <h2 class="text-2xl font-black uppercase tracking-tight mb-8">Ecosistema Relazionale</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="font-black uppercase text-sm mb-1">// IL TEAM</h4>
+                    <p class="text-gray-700 font-medium">Ambiente collaborativo e inclusivo. Inserimento immediato in una macchina organizzativa complessa.</p>
+                </div>
+                <div>
+                    <h4 class="font-black uppercase text-sm mb-1">// IL TUTOR</h4>
+                    <p class="text-gray-700 font-medium">Una guida costante, rassicurante e stimolante. Il vero pilastro di questa crescita formativa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="competenze" class="mb-32">
+        <span class="text-xs font-bold tracking-widest uppercase text-gray-500 block mb-2">[ ASSET ACQUISITI ]</span>
+        <h2 class="text-4xl font-black uppercase tracking-tighter mb-12">BAGAGLIO DI COMPETENZE</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 border-t border-bravox-dark">
+            <div class="border-b md:border-b-0 md:border-r border-bravox-dark p-6 pl-0">
+                <h3 class="text-xs font-black uppercase mb-6 tracking-widest text-gray-400">// VALORI PROFESSIONALI</h3>
+                <ul class="space-y-2 font-bold uppercase text-sm tracking-tight">
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-bravox-dark rounded-full"></span> Precisione dati</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-bravox-dark rounded-full"></span> Riservatezza etica</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-bravox-dark rounded-full"></span> Puntualità</li>
+                </ul>
+            </div>
+            <div class="border-b md:border-b-0 md:border-r border-bravox-dark p-6 md:px-8">
+                <h3 class="text-xs font-black uppercase mb-6 tracking-widest text-gray-400">// ABILITÀ RELAZIONALI</h3>
+                <ul class="space-y-2 font-bold uppercase text-sm tracking-tight">
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-bravox-dark rounded-full"></span> Public speaking</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-bravox-dark rounded-full"></span> Osservazione dinamica</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-bravox-dark rounded-full"></span> Ascolto empatico</li>
+                </ul>
+            </div>
+            <div class="p-6 md:px-8 pr-0">
+                <h3 class="text-xs font-black uppercase mb-6 tracking-widest text-gray-400">// CRESCITA PERSONALE</h3>
+                <ul class="space-y-2 font-bold uppercase text-sm tracking-tight">
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-bravox-dark rounded-full"></span> Consapevolezza civica</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-bravox-dark rounded-full"></span> Visione di futuro</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-bravox-dark rounded-full"></span> Maturità istituzionale</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="valutazione" class="bg-gray-300/40 p-8 md:p-16 border border-gray-300 text-center mb-24">
+        <blockquote class="text-2xl md:text-4xl font-black tracking-tight uppercase max-w-4xl mx-auto leading-tight mb-6">
+            "Un'esperienza altamente arricchente che ha ampliato i miei orizzonti civili, consolidando abilità e consapevolezze fondamentali per il mio domani."
+        </blockquote>
+        <div class="font-black text-xs uppercase tracking-widest text-gray-500">— VALUTAZIONE CONCLUSIVA</div>
+    </section>
+
+    <footer class="text-center py-12 border-t border-gray-300">
+        <p class="text-xs font-bold tracking-widest uppercase text-gray-400">Esame di Stato 2026 — Lorenzo Marcassoli</p>
+    </footer>
+
+    <!-- PULSANTE CASETTA -->
+    <a href="Index.html#ancora" class="fixed bottom-8 right-8 z-50 p-3 bg-bravox-dark text-white border-2 border-white rounded-sm shadow-xl hover:bg-gray-800 transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-10 h-10">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+        </svg>
+    </a>
+
+</body>
+</html>
